@@ -1,12 +1,46 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: apramodya
+ * Date: 10/22/17
+ * Time: 9:48 PM
+ */
 
-class Register_model extends CI_Model{
-    public function __construct()
-    {
-        $this->load->database();
+class User_model extends CI_Model{
+    // login model
+    public function login($type, $username, $password){
+
+
+        if ($type == 1) {
+            $this->db->where('username', $username);
+            $this->db->where('password', $password);
+            $query = $this->db->get('admin');
+        }
+        else if ($type == 2){
+            $this->db->where('student_id', $username);
+            $this->db->where('password', $password);
+            $query = $this->db->get('student');
+        }
+
+        else if ($type == 3){
+            $this->db->where('teachers_id', $username);
+            $this->db->where('password', $password);
+            $query = $this->db->get('teacher');
+        }
+        else if ($type == 4){
+            $query = $this->db->get('parent');
+        }
+        else if ($type == 5){
+            $this->db->where('nonAcademic_id', $username);
+            $this->db->where('password', $password);
+            $query = $this->db->get('nonAcademic');
+        }
+
+        if ($query)
+            return $query->result();
+        else
+            return false;
     }
-
-
 
     // get non academic positions
     public function get_positions(){
@@ -29,7 +63,7 @@ class Register_model extends CI_Model{
             'nid' => $this->input->post('nid'),
             'position' => $position,
             //$position => $this->input->post('position'),
-            'password' => $this->input->post('password'),
+            'password' => md5($this->input->post('password')),
         );
         //echo ($position);
         return $this->db->insert('nonAcademic',$data);
@@ -47,8 +81,8 @@ class Register_model extends CI_Model{
             'previous_school' => $this->input->post('previous_school'),
             'email' => $this->input->post('email'),
             'nid' => $this->input->post('nid'),
-            'password' => $this->input->post('password'),
-            );
+            'password' => md5($this->input->post('password')),
+        );
 
         return $this->db->insert('teacher',$data);
     }
@@ -76,7 +110,7 @@ class Register_model extends CI_Model{
             'fathers_job' => $this->input->post('fathers_job'),
             'fathers_working_address' => $this->input->post('fathers_working_address'),
             'fathers_email' => $this->input->post('fathers_email'),
-            'password' => $this->input->post('password'),
+            'password' => md5($this->input->post('password')),
             //'student_id' => $this->$s_id
         );
 

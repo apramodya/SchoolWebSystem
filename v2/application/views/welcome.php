@@ -9,11 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div>
-    <p>
-        Landing Page
-    </p>
-    <a class="btn btn-default" href="<?php echo site_url('/login'); ?>">Login</a>
-    <a class="btn btn-default" href="<?php echo site_url('/register'); ?>">Register</a>
+    <p>Landing Page</p>
 </div>
 
 </body>

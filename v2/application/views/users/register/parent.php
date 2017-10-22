@@ -1,16 +1,16 @@
 <br><?php echo $title; ?>
 <div class="pull-right">
-    <a class="btn btn-default" href="<?php echo site_url('register'); ?>">Back</a>
+    <a class="btn btn-default" href="<?php echo site_url('users/register'); ?>">Back</a>
 </div>
 <br><br><br>
-<?php //echo validation_errors(); ?>
+<?php echo validation_errors(); ?>
 
-<?php //echo form_open('register/student'); ?>
+<?php echo form_open('users/registerParent'); ?>
 <div class="container">
     <form action="">
         <div class="form-group">
             <label for="">Student ID</label>
-            <input type="text" class="form-control" name="student_id" placeholder="First Name">
+            <input type="text" class="form-control" name="student_id" placeholder="Student ID">
         </div>
 
         <!--register-->

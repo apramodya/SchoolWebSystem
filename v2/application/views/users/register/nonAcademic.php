@@ -1,11 +1,12 @@
 <br><?php echo $title; ?>
 <div class="pull-right">
-    <a class="btn btn-default" href="<?php echo site_url('register'); ?>">Back</a>
+    <a class="btn btn-default" href="<?php echo site_url('users/register'); ?>">Back</a>
 </div>
 <br><br><br>
-<?php echo validation_errors(); ?>
+<div class="alert-danger"><?php echo validation_errors(); ?></div>
 
-<?php echo form_open_multipart('register/nonAcademic'); ?>
+
+<?php echo form_open_multipart('users/registerNonAcademic'); ?>
 <div class="container">
     <form action="">
         <div class="form-group">
