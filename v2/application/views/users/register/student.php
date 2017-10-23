@@ -1,3 +1,7 @@
+<h2 style="margin-left: 550px;">
+    Register Student
+</h2>
+<hr>
 <br>
 <div class="pull-right">
     <a class="btn btn-default" href="<?php echo site_url('users/register'); ?>">Back</a>
@@ -25,7 +29,6 @@
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <?php echo form_open_multipart('users/registerStudent'); ?>
-        <h2 class="text-center"><?php echo $title; ?></h2>
         <h5>Student's Details</h5>
         <hr>
         <div class="row">
