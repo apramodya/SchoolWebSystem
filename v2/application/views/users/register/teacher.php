@@ -38,7 +38,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <?php echo form_open_multipart('users/registerStudent'); ?>
+            <?php echo form_open_multipart('users/registerTeacher'); ?>
             <h5>Teacher's Details</h5>
             <hr>
             <div class="row">
@@ -64,7 +64,7 @@
             <div class="row">
                 <div class="form-group col-md-6">
                     <label for="">NIC</label>
-                    <input type="text" class="form-control" name="NIC" placeholder="NIC" required>
+                    <input type="text" class="form-control" name="nid" placeholder="NIC" required>
                 </div>
             </div>
             <div class="row">

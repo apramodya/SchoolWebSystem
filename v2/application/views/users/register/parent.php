@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Parent</title>
-    <link rel="stylesheet" href="bootstrap.css">
-</head>
-<body>
-
 <h2 style="margin-left: 550px;">
     Register Parent
 </h2>
@@ -39,7 +30,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <?php echo form_open_multipart('users/registerStudent'); ?>
+            <?php echo form_open_multipart('users/registerParent'); ?>
             <h5>Parent's Details</h5>
             <hr>
             <div class="row">
@@ -47,7 +38,7 @@
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="">Student ID</label>
-                        <input type="text" class="form-control" name="sID" placeholder="Student ID" required>
+                        <input type="text" class="form-control" name="student_id" placeholder="Student ID" required>
                     </div>
                 </div>
                 <!--register-->

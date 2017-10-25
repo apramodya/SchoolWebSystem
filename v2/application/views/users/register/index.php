@@ -1,9 +1,11 @@
 
-
+<h2 class="text-center"><?php echo $title; ?></h2>
+<br>
+<hr>
 <br>
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
-        <h2 class="text-center"><?php echo $title; ?></h2><br>
+
         <div class="row">
             <a class="btn btn-primary btn-block" href="<?php echo site_url('users/registerStudent'); ?>">Student</a><br>
         </div>

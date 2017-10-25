@@ -15,30 +15,20 @@
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <a href="<?php echo base_url(); ?>" class="navbar-brand">School</a>
+            <a href="<?php echo site_url(); ?>" class="navbar-brand">Student's Section</a>
         </div>
         <div id="navbar">
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url(); ?>/">Topic 1</a></li>
-                <li><a href="<?php echo base_url(); ?>/">Topic 2</a></li>
-                <li><a href="<?php echo base_url(); ?>/">Topic 3</a></li>
+                <li><a href="<?php echo site_url('student/newsFeed'); ?>/">News Feed</a></li>
+                <li><a href="<?php echo site_url('student/myClass'); ?>/">My Class</a></li>
+                <li><a href="<?php echo site_url('student/profile'); ?>/">My Profile</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php if (!$this->session->userdata('logged_in')): ?>
                     <li><a class="btn" href="<?php echo site_url('users/login'); ?>">Login</a></li>
                 <?php endif; ?>
-                <?php if( ($this->session->userdata('logged_in')) && ($this->session->userdata('type') != '1')): ?>
-                <li><a class="btn"><?php echo "Hello, ".$this->session->userdata('name'); ?></a></li>
-                <?php endif; ?>
-                <?php if ($this->session->userdata('type') == '1'): ?>
-                    <li><a class="btn  " href="<?php echo site_url('users/newsFeed'); ?>">News Feed</a></li>
-                    <li><a class="btn  " href="<?php echo site_url('users/postNews'); ?>">Post News</a></li>
-                    <li><a class="btn  " href="<?php echo site_url('users/register'); ?>">Register</a></li>
-                <?php endif; ?>
-                <?php if ($this->session->userdata('type') == '1'): ?>
-
-                <?php endif; ?>
                 <?php if ($this->session->userdata('logged_in')): ?>
+                    <li><a class="btn"><?php echo "Hello, ".$this->session->userdata('name'); ?></a></li>
                     <li><a class="btn" href="<?php echo site_url('users/logout'); ?>">Logout</a></li>
                 <?php endif; ?>
             </ul>

@@ -9,8 +9,6 @@
 class User_model extends CI_Model{
     // login model
     public function login($type, $username, $password){
-
-
         if ($type == 1) {
             $this->db->where('username', $username);
             $this->db->where('password', $password);
@@ -23,7 +21,7 @@ class User_model extends CI_Model{
         }
 
         else if ($type == 3){
-            $this->db->where('teachers_id', $username);
+            $this->db->where('nid', $username);
             $this->db->where('password', $password);
             $query = $this->db->get('teacher');
         }
@@ -31,13 +29,13 @@ class User_model extends CI_Model{
             $query = $this->db->get('parent');
         }
         else if ($type == 5){
-            $this->db->where('nonAcademic_id', $username);
+            $this->db->where('nid', $username);
             $this->db->where('password', $password);
             $query = $this->db->get('nonAcademic');
         }
 
         if ($query)
-            return $query->result();
+            return $query->row();
         else
             return false;
     }
@@ -46,6 +44,24 @@ class User_model extends CI_Model{
     public function get_positions(){
         $query = $this->db->select('position,position_id')->from('non_academic_positions')->get();
         return $query->result();
+    }
+
+    // get news
+    public function get_news(){
+        $query = $this->db->order_by('news_id','DESC' )->select('title, news, posted_by','timestamp')->from('news_feed')->get();
+        return $query->result_array();
+    }
+
+    // insert news post for teachers
+    public function insert_post($posted_by){
+        $data = array(
+            'title' => $this->input->post('title'),
+            'news' => $this->input->post('news'),
+            'posted_by' => $posted_by,
+            'type' => $this->input->post('type')
+        );
+
+        return $this->db->insert('news_feed',$data);
     }
 
     //insert a non academic
@@ -75,12 +91,12 @@ class User_model extends CI_Model{
             'first_name' => $this->input->post('first_name'),
             'middle_name' => $this->input->post('middle_name'),
             'last_name' => $this->input->post('last_name'),
+            'nid' => $this->input->post('nid'),
             'dob' => $this->input->post('dob'),
             'home_address' => $this->input->post('home_address'),
             'current_address' => $this->input->post('current_address'),
             'previous_school' => $this->input->post('previous_school'),
             'email' => $this->input->post('email'),
-            'nid' => $this->input->post('nid'),
             'password' => md5($this->input->post('password')),
         );
 
@@ -89,7 +105,10 @@ class User_model extends CI_Model{
 
     // insert a student
     public function insert_student(){
-        //$s_id = date(date_timestamp_get());
+        $year = date("Y"); // year
+        $month = date("m"); // month
+        $random = rand(10,99); // random
+        $s_id = $year.$month.$random;
         $data = array(
             'first_name' => $this->input->post('first_name'),
             'middle_name' => $this->input->post('middle_name'),
@@ -111,7 +130,7 @@ class User_model extends CI_Model{
             'fathers_working_address' => $this->input->post('fathers_working_address'),
             'fathers_email' => $this->input->post('fathers_email'),
             'password' => md5($this->input->post('password')),
-            //'student_id' => $this->$s_id
+            'student_id' => $s_id
         );
 
         return $this->db->insert('student',$data);
