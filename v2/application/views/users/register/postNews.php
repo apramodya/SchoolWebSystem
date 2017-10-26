@@ -1,6 +1,3 @@
-<div class="pull-right">
-    <a class="btn btn-default" href="<?php echo site_url('users/index'); ?>">Back</a>
-</div>
 <h2 class="text-center">Post News</h2>
 <br>
 <hr>

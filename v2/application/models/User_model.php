@@ -43,12 +43,12 @@ class User_model extends CI_Model{
     // get non academic positions
     public function get_positions(){
         $query = $this->db->select('position,position_id')->from('non_academic_positions')->get();
-        return $query->result();
+        return $query->result_array();
     }
 
     // get news
     public function get_news(){
-        $query = $this->db->order_by('news_id','DESC' )->select('title, news, posted_by','timestamp')->from('news_feed')->get();
+        $query = $this->db->order_by('news_id','DESC' )->select('title, news, posted_by, timestamp')->from('news_feed')->get();
         return $query->result_array();
     }
 
@@ -66,8 +66,10 @@ class User_model extends CI_Model{
 
     //insert a non academic
     public function insert_nonAcademic(){
-        $temp = 'position';
-        $position = $this->db->select('position')->from('non_academic_positions')->where('position_id','2')->get();
+        $position_id = $this->input->post('position');
+        //$position = $this->db->select('position')->from('non_academic_positions')->where('position_id',$position_id)->get();
+        $query = $this->db->query('SELECT position FROM non_academic_positions WHERE position_id = '.$position_id.' LIMIT 1');
+        $position = $query->row()->position;
         $data = array(
             'first_name' => $this->input->post('first_name'),
             'middle_name' => $this->input->post('middle_name'),
@@ -79,8 +81,13 @@ class User_model extends CI_Model{
             'nid' => $this->input->post('nid'),
             'position' => $position,
             //$position => $this->input->post('position'),
-            'password' => md5($this->input->post('password')),
+            'password' => md5($this->input->post('password'))
+
+
+
+
         );
+        //return $position;
         //echo ($position);
         return $this->db->insert('nonAcademic',$data);
     }

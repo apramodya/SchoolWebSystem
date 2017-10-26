@@ -2,13 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Non Academic</title>
-    <link rel="stylesheet" href="bootstrap.css">
+    <title><?php echo $title; ?></title>
 </head>
 <body>
 
-<h2 style="margin-left: 550px;">
-    Register Non Academic
+<h2 class="text-center">
+    <?php echo $title; ?>
 </h2>
 <hr>
 
@@ -17,25 +16,7 @@
     <a class="btn btn-default" href="<?php echo site_url('users/register'); ?>">Back</a>
 </div>
 <?php echo validation_errors(); ?>
-<!--model-->
-<div class="modal fade" id="error_model">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Error</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p><?php echo validation_errors(); ?></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <?php echo form_open_multipart('users/registerNonacademic'); ?>
@@ -64,7 +45,7 @@
         <div class="row">
             <div class="form-group col-md-6">
                 <label for="">NIC</label>
-                <input type="text" class="form-control" name="NIC" placeholder="NIC" required>
+                <input type="text" class="form-control" name="nid" placeholder="NIC" required>
             </div>
         </div>
         <div class="row">
@@ -87,7 +68,11 @@
         <div class="row">
             <div class="form-group col-md-12">
                 <label for="">Position</label>
-                <input type="text" class="form-control" name="Position" placeholder="Position">
+                <select name="position" class="form-control">
+                    <?php foreach ($positions as $p): ?>
+                        <option value="<?php echo $p['position_id'] ?>"><?php echo $p['position'] ?></option>
+                    <?php endforeach; ?>
+                </select>
             </div>
         </div>
         <div class="row">
@@ -126,8 +111,3 @@
 <?php echo form_close(); ?>
 </body>
 </html>
-
-
-<script type="text/javascript">
-    // $('#error_model').modal('show');
-</script>

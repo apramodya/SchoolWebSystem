@@ -98,7 +98,7 @@ class Users extends CI_Controller{
         $this->form_validation->set_rules('last_name','Last Name','required');
         $this->form_validation->set_rules('dob','Date of Birth','required');
         $this->form_validation->set_rules('home_address','Address','required');
-        $this->form_validation->set_rules('id','ID','required|min_length[10]|max_length[12]');
+        $this->form_validation->set_rules('nid','ID','required|min_length[10]|max_length[12]');
         $this->form_validation->set_rules('password','Password','required|min_length[1]');
         $this->form_validation->set_rules('password2','Confirm Password','required|matches[password]');
 
@@ -106,7 +106,7 @@ class Users extends CI_Controller{
             $this->load->view('includes/header');
             $this->load->view('users/register/nonAcademic',$data);
         }else{
-            $this->user_model->insert_nonAcademic();
+            print_r($this->user_model->insert_nonAcademic());
             redirect('users/register');
         }
     }
