@@ -19,4 +19,51 @@
             $this->load->view('pages/History');
             $this->load->view('templates/footer');
         }
+         public function anthem(){
+
+            $this->load->view('templates/header');
+            $this->load->view('users/School Anthem');
+            $this->load->view('templates/footer');
+        }
+         public function rules(){
+
+            $this->load->view('templates/header');
+            $this->load->view('users/Rules and Reg');
+            $this->load->view('templates/footer');
+        }
+         public function primary(){
+
+            $this->load->view('templates/header');
+            $this->load->view('pages/primary');
+            $this->load->view('templates/footer');
+        } 
+        public function pre(){
+
+            $this->load->view('templates/header');
+            $this->load->view('pages/nursary');
+            $this->load->view('templates/footer');
+        }
+         public function secondary(){
+
+            $this->load->view('templates/header');
+            $this->load->view('pages/secondary');
+            $this->load->view('templates/footer');
+        }
+      
+         public function events(){
+
+            $this->load->view('templates/header');
+            $this->load->view('posts/index');
+            $this->load->view('templates/footer');
+        }
+        public function contactus(){
+
+            $this->load->view('templates/header');
+            $this->load->view('pages/contact');
+            $this->load->view('templates/footer');
+        }
+
+        
+        
+
 	}
