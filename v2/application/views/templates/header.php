@@ -18,7 +18,7 @@
   <div class="container-fluid">
     
     <div class="navbar-header">
-      <img src="assets/images/logo.jpg"  width="65" height="65">
+      <img src="<?php echo site_url('')?>image/logo.jpg"  width="65" height="65">
       <a class="navbar-brand white" href="<?php echo base_url(); ?>">DONUM DEI Institute-International School</a>
 
     </div>
@@ -30,34 +30,37 @@
         <li class="dropdown">
           <a href="<?php echo base_url(); ?>about" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
           <ul class="dropdown-menu">
-            <li><a href=""<?php echo base_url(); ?>"">HISTORY</a></li>
-            <li><a href="#">SCHOOL ANTHEM</a></li>
-            <li><a href="#">RULES & REGULATIONS</a></li>
-            <li><a href="#">FACILITIES</a></li>
+            <li><a href="<?php echo site_url('pages/history'); ?>">HISTORY</a></li>
+            <li><a href="<?php echo site_url('pages/anthem'); ?>">SCHOOL ANTHEM</a></li>
+            <li><a href="<?php echo site_url('pages/rules'); ?>">RULES & REGULATIONS</a></li>
+            <li><a href="<?php echo site_url('pages/facilities'); ?>">FACILITIES</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">THE SCHOOL</a>
           <ul class="dropdown-menu">
-            <li><a href="#">PRE SCHOOL</a></li>
-            <li><a href="#">PRIMARY SCHOOL</a></li>
-            <li><a href="#">SECONDARY SCHOOL</a></li>
-            <li><a href="#">NEW ADMISSION</a></li>
+            <li><a href="<?php echo site_url('pages/pre'); ?>">PRE SCHOOL</a></li>
+            <li><a href="<?php echo site_url('pages/primary'); ?>">PRIMARY SCHOOL</a></li>
+            <li><a href="<?php echo site_url('pages/secondary'); ?>">SECONDARY SCHOOL</a></li>
+            <li><a href="<?php echo site_url('pages/admission'); ?>">NEW ADMISSION</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENT & GALLERY</a>
           <ul class="dropdown-menu">
-            <li><a href="#">EVENT CALENDAR</a></li>
-            <li><a href="<?php echo base_url(); ?>posts">PREVIOUS EVENTS</a></li>
-            <li><a href="#">GALLERY</a></li>
+            <li><a href="<?php echo site_url('pages/calendar'); ?>">EVENT CALENDAR</a></li>
+            <li><a href="<?php echo site_url('pages/events'); ?>">PREVIOUS EVENTS</a></li>
+            <li><a href="<?php echo site_url('pages/gallery'); ?>">GALLERY</a></li>
           </ul>
         </li>
 
-        <li ><a href="#" class="white">CONTACT US</a></li>
-        <li><a href="#" class="white"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+        <li ><a href="<?php echo site_url('pages/contactus'); ?>" class="white">CONTACT US</a></li>
+        <?php if (!$this->session->userdata('logged_in')): ?>
+            <li><a class="btn white" href="<?php echo site_url('users/login'); ?>">Login</a></li>
+        <?php endif; ?>
+
     </ul>
   </div>
 </nav>

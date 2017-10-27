@@ -12,4 +12,11 @@
 			$this->load->view('pages/'.$page, $data);
 			$this->load->view('templates/footer');
 		}
+
+        public function history(){
+
+            $this->load->view('templates/header');
+            $this->load->view('pages/History');
+            $this->load->view('templates/footer');
+        }
 	}
