@@ -12,4 +12,6 @@
 			$this->load->view('pages/'.$page, $data);
 			$this->load->view('templates/footer');
 		}
+
+
 	}
