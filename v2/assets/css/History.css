@@ -1,0 +1,44 @@
+@charset "utf-8";
+#tag_line{
+	background-color:#007eb5;
+	font-size: 1.5em;
+	height: 60px;
+}
+#white{
+	width: 200px;
+	height: 90px;
+	background-color: white;
+	z-index: 1;
+	transform: skewX(25deg);
+	position: absolute;
+	left: 200px;
+}	
+#tag_line span{
+	display:inline-block;
+	z-index: 1;
+	margin: 1em;
+	position: absolute;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#details{
+	color:black;
+}
+.anthem{
+	font-style: italic;
+	text-align: center;
+	font-size:40px;
+	font-weight: 400;
+	line-height: 1.8;
+	letter-spacing: 0.02em;
+	color: #5d5c5c;
+}
