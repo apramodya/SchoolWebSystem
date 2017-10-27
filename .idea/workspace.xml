@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cd70b7a-5b7f-4a15-a0e1-b3fc1f786b2e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/application/config/database.php" afterPath="$PROJECT_DIR$/v2/application/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/application/views/users/register/nonAcademic.php" afterPath="$PROJECT_DIR$/v2/application/views/users/register/nonAcademic.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/application/views/users/register/parent.php" afterPath="$PROJECT_DIR$/v2/application/views/users/register/parent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/application/views/users/register/student.php" afterPath="$PROJECT_DIR$/v2/application/views/users/register/student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/application/views/users/register/teacher.php" afterPath="$PROJECT_DIR$/v2/application/views/users/register/teacher.php" />
-    </list>
+    <list default="true" id="3cd70b7a-5b7f-4a15-a0e1-b3fc1f786b2e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -357,15 +351,15 @@
       <updated>1503845377790</updated>
       <workItem from="1503845380661" duration="486000" />
       <workItem from="1508746110061" duration="456000" />
-      <workItem from="1508748652621" duration="1428000" />
+      <workItem from="1508748652621" duration="1905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2370000" />
+    <option name="totallyTimeSpent" value="2847000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
