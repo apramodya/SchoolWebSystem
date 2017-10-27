@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Full Slider - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -33,7 +32,8 @@
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active">
-                <img src="<?php base_url() ?>img/donum7.jpg" style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
+                <img src="<?php base_url() ?>img/donum7.jpg"
+                     style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
 
                 <div class="carousel-caption d-none d-md-block">
                     <p></p>
@@ -41,14 +41,16 @@
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
             <div class="carousel-item">
-                <img src="<?php base_url() ?>imgdonum6.jpg" style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
+                <img src="<?php base_url() ?>img/donum6.jpg"
+                     style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
                 <div class="carousel-caption d-none d-md-block">
                     <p></p>
                 </div>
             </div>
             <!-- Slide Three - Set the background image for this slide in the line below -->
             <div class="carousel-item">
-                <img src="<?php base_url() ?>imgdonum8.jpg" style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
+                <img src="<?php base_url() ?>img/donum8.jpg"
+                     style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
 
                 <div class="carousel-caption d-none d-md-block">
                     <p></p>
@@ -219,7 +221,8 @@
                     </div>
                     <!-- Slide Two - Set the background image for this slide in the line below -->
                     <div class="carousel-item">
-                        <img src="<?php base_url() ?>img/blue.jpg" style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
+                        <img src="<?php base_url() ?>img/blue.jpg"
+                             style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="p-5">
                                 <style type="text/css">
@@ -243,7 +246,8 @@
 
                     <!-- Slide Three - Set the background image for this slide in the line below -->
                     <div class="carousel-item">
-                        <img src="<?php base_url() ?>img/blue.jpg" style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
+                        <img src="<?php base_url() ?>img/blue.jpg"
+                             style="background-image: : donum1.jpg; width: 1400px; height: 700px;">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="p-5">
                                 <style type="text/css">
@@ -355,14 +359,14 @@
         <script src="<?php base_url() ?>assets/js/bootstrap.min.js"></script>
 
         <!-- Plugin JavaScript -->
-        <script src="<?php echo site_url()?>vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="<?php echo site_url() ?>vendor/jquery-easing/jquery.easing.min.js"></script>
 
         <!-- Contact form JavaScript -->
-        <script src="<?php echo site_url()?>assets/js/jqBootstrapValidation.js"></script>
-        <script src="<?php echo site_url()?>assets/js/contact_me.js"></script>
+        <script src="<?php echo site_url() ?>assets/js/jqBootstrapValidation.js"></script>
+        <script src="<?php echo site_url() ?>assets/js/contact_me.js"></script>
 
         <!-- Custom scripts for this template -->
-        <script src="<?php echo site_url()?>assets/js/agency.min.js"></script>
+        <script src="<?php echo site_url() ?>assets/js/agency.min.js"></script>
 
 
 </body>

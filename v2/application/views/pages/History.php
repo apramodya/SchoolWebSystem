@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="History.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
+<link href="<?php echo base_url() ?>assets/History.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
 <title>History</title>
 </head>
 <body>
@@ -23,14 +23,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="school3.jpg" alt="image1" style="width:100%;height:400px">
+      <img src="<?php echo base_url() ?>image/school3.jpg" alt="image1" style="width:100%;height:400px">
       <div>
           
       </div>
     </div>
 
     <div class="item">
-      <img src="school4.jpg" alt="image2" style="width:100%;height:400px">
+      <img src="<?php echo base_url() ?>image/school4.jpg" alt="image2" style="width:100%;height:400px">
     </div>
  
     
@@ -57,7 +57,7 @@
 <div class="row" style="height:50px"></div>
  
     <div class="container">
-          <img src="school4.jpg" alt="Norway" style="width:80%;">
+          <img src="<?php echo base_url() ?>image/school4.jpg" alt="Norway" style="width:80%;">
           <div class="centered">
             <h3>History of Donum Dei Institute</h3><br>
             <h4>Donum Dei Institute is an international school which was established in 08<sup>th</sup> of September 2015 with 8 students and 3 teachers to ofer a Cambridge Education for students from Primary,Secondary Level to Advanced Level.<br>
