@@ -6,7 +6,7 @@
 			
 			$data['title']='Latest Posts';
 
-			$data['event_gallery']=$this->Post_model->get_posts();
+			$data['event_gallery']=$this->post_model->get_posts();
 
 
 			$this->load->view('templates/header');
@@ -15,7 +15,7 @@
 		}
 
 		public function view($slug = NULL){
-			$data['post'] = $this->Post_model->get_posts($slug);
+			$data['post'] = $this->post_model->get_posts($slug);
 
 			if (empty($data['post'])) {
 				show_404();

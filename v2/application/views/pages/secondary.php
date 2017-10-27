@@ -18,7 +18,6 @@
 <style type="text/css">
     h1{
       position: relative;
-      top: 67px;
       background-color: #5A5AFF;
       color:#ffffff;
       font: 2.5em Arial , sans-serif;

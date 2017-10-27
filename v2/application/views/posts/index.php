@@ -3,7 +3,7 @@
 	<h3><?php echo $post['title']; ?></h3>
 	<div class="row">
 		<div class="col-md-3">
-			<img class="post-thumb img-thumbnail" src="<?php echo site_url();?>assets/images/posts/<?php echo $post['post_image'];?>">
+			<img class="post-thumb img-thumbnail" src="<?php echo site_url();?>/image/posts/<?php echo $post['post_image'];?>">
 		</div>
 		<div class="col-md-9">
 			<small class="post_date">Posted on: <?php echo $post['created_time']; ?></small><br><br>

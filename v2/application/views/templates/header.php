@@ -51,14 +51,14 @@
           <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENT & GALLERY</a>
           <ul class="dropdown-menu">
             <li><a href="<?php echo site_url('pages/calendar'); ?>">EVENT CALENDAR</a></li>
-            <li><a href="<?php echo site_url('pages/events'); ?>">PREVIOUS EVENTS</a></li>
+            <li><a href="<?php echo site_url('posts/index'); ?>">PREVIOUS EVENTS</a></li>
             <li><a href="<?php echo site_url('pages/gallery'); ?>">GALLERY</a></li>
           </ul>
         </li>
 
         <li ><a href="<?php echo site_url('pages/contactus'); ?>" class="white">CONTACT US</a></li>
         <?php if (!$this->session->userdata('logged_in')): ?>
-            <li><a class="btn white" href="<?php echo site_url('users/login'); ?>">Login</a></li>
+            <li><a href="<?php echo site_url('users/login'); ?>" class="white">LOGIN</a></li>
         <?php endif; ?>
 
     </ul>

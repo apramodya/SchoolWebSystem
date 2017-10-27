@@ -18,7 +18,6 @@
 <style type="text/css">
     h1{
       position: relative;
-      top: 67px;
       background-color: #5A5AFF;
       color:#ffffff;
       font: 2.5em Arial , sans-serif;
@@ -59,7 +58,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="p-5">
-              <img class="img-fluid " src="<?php echo base_url();?>img/donum5.jpg" alt="" >
+              <img class="img-fluid " src="<?php //echo base_url();?>img/donum5.jpg" alt="" >
             </div>
           </div>
           <div class="col-md-6">
@@ -76,7 +75,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 order-2">
             <div class="p-5">
-              <img class="img-fluid " src="<?php echo base_url();?>img/donum6.jpg" alt="">
+              <img class="img-fluid " src="<?php //echo base_url();?>img/donum6.jpg" alt="">
             </div>
           </div>
           <div class="col-md-6 order-1">
