@@ -22,13 +22,13 @@
          public function anthem(){
 
             $this->load->view('templates/header');
-            $this->load->view('users/School Anthem');
+            $this->load->view('pages/School Anthem');
             $this->load->view('templates/footer');
         }
          public function rules(){
 
             $this->load->view('templates/header');
-            $this->load->view('users/Rules and Reg');
+            $this->load->view('pages/Rules and Reg');
             $this->load->view('templates/footer');
         }
          public function primary(){

@@ -306,7 +306,7 @@
                             </li>
                             <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                                    <img class="rounded-circle img-fluid"  alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -318,7 +318,7 @@
                             </li>
                             <li>
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                                    <img class="rounded-circle img-fluid"  alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -330,7 +330,7 @@
                             </li>
                             <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                                    <img class="rounded-circle img-fluid"  alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -359,7 +359,7 @@
         <script src="<?php base_url() ?>assets/js/bootstrap.min.js"></script>
 
         <!-- Plugin JavaScript -->
-        <script src="<?php echo site_url() ?>vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="<?php echo site_url() ?>assets/js/jquery-easing/jquery.easing.min.js"></script>
 
         <!-- Contact form JavaScript -->
         <script src="<?php echo site_url() ?>assets/js/jqBootstrapValidation.js"></script>

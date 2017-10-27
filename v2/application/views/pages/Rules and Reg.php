@@ -23,14 +23,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="school3.jpg" alt="image1" style="width:100%;height:400px">
+      <img src="<?php echo base_url();?>image/school3.jpg" alt="image1" style="width:100%;height:400px">
       <div>
           
       </div>
     </div>
 
     <div class="item">
-      <img src="school2.jpg" alt="image2" style="width:100%;height:400px">
+      <img src="<?php echo base_url();?>image/school2.jpg" alt="image2" style="width:100%;height:400px">
     </div>
  
     

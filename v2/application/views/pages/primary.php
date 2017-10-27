@@ -42,7 +42,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 order-2">
             <div class="p-5">
-              <img class="" src="donum4.jpg" alt="" style="width: 450px;height: 300px; padding-top: 20px;">
+              <img class="" src="<?php echo base_url();?>img/donum4.jpg" alt="" style="width: 450px;height: 300px; padding-top: 20px;">
             </div>
           </div>
           <div class="col-md-6 order-1">
@@ -59,7 +59,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="p-5">
-              <img class="img-fluid " src="donum5.jpg" alt="" >
+              <img class="img-fluid " src="<?php echo base_url();?>img/donum5.jpg" alt="" >
             </div>
           </div>
           <div class="col-md-6">
@@ -76,7 +76,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 order-2">
             <div class="p-5">
-              <img class="img-fluid " src="donum6.jpg" alt="">
+              <img class="img-fluid " src="<?php echo base_url();?>img/donum6.jpg" alt="">
             </div>
           </div>
           <div class="col-md-6 order-1">

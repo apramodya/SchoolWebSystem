@@ -10,15 +10,14 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo site_url('') ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo site_url('') ?>assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/one-page-wonder.css" rel="stylesheet">
 
     <style type="text/css">
         h1 {
             position: relative;
-            top: 67px;
             background-color: #5A5AFF;
             color: #ffffff;
             font: 2.5em Arial, sans-serif;
@@ -39,7 +38,7 @@
         <div class="row align-items-center">
             <div class="col-md-6 order-2">
                 <div class="p-5">
-                    <img class="" src="img/donum1.jpg" alt="" style="width: 450px;height: 300px; padding-top: 20px;">
+                    <img class="" src="<?php echo base_url();?>img/donum1.jpg" alt="" style="width: 450px;height: 300px; padding-top: 20px;">
                 </div>
             </div>
             <div class="col-md-6 order-1">
@@ -57,12 +56,12 @@
 <section>
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6 order-2">
                 <div class="p-5">
-                    <img class="img-fluid " src="donum1.jpg" alt="">
+                    <img class="" src="<?php echo base_url();?>img/donum2.jpg" alt="" style="width: 450px;height: 300px; padding-top: 20px;">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-1">
                 <div class="p-5">
                     <p>Reading,writing, working with numbers makes your kid ready for the school. Music ,singing,
                         dancing , Arts , Crafts and other activities will make your child grow and develop with skills
@@ -82,7 +81,7 @@
         <div class="row align-items-center">
             <div class="col-md-6 order-2">
                 <div class="p-5">
-                    <img class="img-fluid " src="donum3.jpg" alt="">
+                    <img class="" src="<?php echo base_url();?>img/donum3.jpg" alt="" style="width: 450px;height: 300px; padding-top: 20px;">
                 </div>
             </div>
             <div class="col-md-6 order-1">

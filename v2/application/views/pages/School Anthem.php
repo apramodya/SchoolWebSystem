@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="History.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
+<link href="<?php echo base_url();?>assets/css/History.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
 <title>School Anthem</title>
 </head>
 <body>
@@ -23,14 +23,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="school3.jpg" alt="image1" style="width:100%;height:400px">
+      <img src="<?php echo base_url();?>image/school3.jpg" alt="image1" style="width:100%;height:400px">
       <div>
           
       </div>
     </div>
 
     <div class="item">
-      <img src="school2.jpg" alt="image2" style="width:100%;height:400px">
+      <img src="<?php echo base_url();?>image/school2.jpg" alt="image2" style="width:100%;height:400px">
     </div>
  
     
@@ -103,7 +103,7 @@
 
 <div class="col-md-5">
   <div class="row" style="height:100px"></div>
-  <img src="logo1.jpg" style="width:300px;height:300px" >
+  <img src="<?php echo base_url();?>image/logo1.jpg" style="width:300px;height:300px" >
 </div>
 
 
