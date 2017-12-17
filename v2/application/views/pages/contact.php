@@ -150,14 +150,14 @@
       
     <div class="col-md-3">  
         <div class="span4">
-        <h2>DONUM DEI SCHOOL</h2>
+        <h3>DONUM DEI Institute-International School</h3>
         <address>
           <strong>donumdei@gmail.com</strong><br>
-          15 Waththala<br>
-          Waththala<br>
-          Colombo<br>
+          15<br>
+          Idama<br>
+          Moratuwa<br>
           Sri lanka<br>
-          >
+          
           <abbr title="Phone">TEL:</abbr> 011-0151899
         </address>
       
