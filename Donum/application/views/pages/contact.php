@@ -143,8 +143,8 @@
     <div class="col-md-9">
       
         
-          <iframe width="50%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed" style="margin-left: 50px"></iframe>
-        
+         
+        <iframe width="50%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.034155973193!2d79.87518001431758!3d6.886512295023764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a325faa59c9%3A0x14ee87b881991480!2sIdama+Mawatha%2C+Colombo+00500!5e0!3m2!1ssi!2slk!4v1513586598213" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       
       </div>
       

@@ -12,18 +12,18 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="<?php echo base_url() ?>img/donum7.jpg" alt="image1" style="width:100%;height:400px">
+      <img src="<?php echo base_url() ?>img/donum7.jpg" alt="image1" style="width:100%;height:500px">
       <div>
           
       </div>
     </div>
 
     <div class="item">
-      <img src="<?php echo base_url() ?>img/donum6.jpg" alt="image2" style="width:100%;height:400px">
+      <img src="<?php echo base_url() ?>img/donum6.jpg" alt="image2" style="width:100%;height:500px">
     </div>
 
     <div class="item">
-      <img src="<?php echo base_url() ?>img/donum8.jpg" alt="image3" style="width:100%;height:400px">
+      <img src="<?php echo base_url() ?>img/donum8.jpg" alt="image3" style="width:100%;height:500px">
     </div>
  
  
@@ -43,7 +43,7 @@
 
  <div class="col-md-2">
      <div class="row" style="height:80px"></div>
-  <img src="<?php echo base_url();?>image/principal.jpg" style="width:200px;height:200px" >
+  <img src="<?php echo base_url();?>img/principal.jpg" style="width:200px;height:200px" >
 </div>
 
 

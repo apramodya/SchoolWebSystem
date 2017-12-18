@@ -20,12 +20,12 @@
 
         <div class="navbar-header">
             <img src="<?php echo site_url('') ?>image/logo.jpg" width="65" height="65">
-            <a class="navbar-brand white" href="<?php echo base_url(); ?>">DONUM DEI Institute-International School</a>
+            <a class="navbar-brand white" href="<?php echo site_url('pages/home'); ?>">DONUM DEI Institute-International School</a>
 
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo base_url(); ?>" class="white">HOME</a></li>
+            <li><a href="<?php echo site_url('pages/home'); ?>" class="white">HOME</a></li>
 
             <li class="dropdown">
                 <a href="<?php echo base_url(); ?>about" class="dropdown-toggle white" data-toggle="dropdown"
@@ -34,7 +34,6 @@
                     <li><a href="<?php echo site_url('pages/history'); ?>">HISTORY</a></li>
                     <li><a href="<?php echo site_url('pages/anthem'); ?>">SCHOOL ANTHEM</a></li>
                     <li><a href="<?php echo site_url('pages/rules'); ?>">RULES & REGULATIONS</a></li>
-                    <li><a href="<?php echo site_url('pages/facilities'); ?>">FACILITIES</a></li>
                 </ul>
             </li>
 
@@ -53,13 +52,11 @@
                 <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true"
                    aria-expanded="false">EVENT & GALLERY</a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo site_url('pages/calendar'); ?>">EVENT CALENDAR</a></li>
                     <li><a href="<?php echo site_url('posts'); ?>">PREVIOUS EVENTS</a></li>
-                    <li><a href="<?php echo site_url('pages/gallery'); ?>">GALLERY</a></li>
                 </ul>
             </li>
 
-            <li><a href="<?php echo site_url('pages/contactus'); ?>" class="white">CONTACT US</a></li>
+            <li><a href="<?php echo site_url('controller_con'); ?>" class="white">CONTACT US</a></li>
             <?php if ($this->session->userdata('logged_in')): ?>
                 <li><a href="<?php echo site_url('login/portal'); ?>" class="white">PORTAL</a></li>
             <?php endif; ?>
@@ -73,3 +70,11 @@
         </ul>
     </div>
 </nav>
+<!--   flash msg -->
+<?php if ($this->session->flashdata('msg_sent')): ?>
+<div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+    <p><?php echo $this->session->flashdata('msg_sent'); ?></p>
+</div>
+<?php endif; ?>

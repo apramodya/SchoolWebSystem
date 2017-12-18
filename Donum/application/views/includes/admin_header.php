@@ -47,6 +47,8 @@
                             <li><a class="btn  " href="<?php echo site_url('news/post'); ?>">Post News</a></li>
                             <li><a class="btn  " href="<?php echo site_url('admin/register'); ?>">Register</a></li>
                             <li><a class="btn  " href="<?php echo site_url('posts/create'); ?>">Create Post</a></li>
+                            <li><a class="btn  " href="<?php echo site_url('home/create'); ?>">Create Announcements</a></li>
+                            <li><a class="btn  " href="<?php echo site_url('controller_con/get_message'); ?>">View Messages</a></li>
                         </ul>
                     </li>
                     <li><a class="btn  " href="<?php echo site_url('logout'); ?>">Logout</a></li>

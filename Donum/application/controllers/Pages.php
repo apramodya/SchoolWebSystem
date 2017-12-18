@@ -1,6 +1,17 @@
 <?php
 	
 	class Pages extends CI_Controller{
+
+        public function home(){
+            $data['title'] = 'ANNOUNCEMENTS';
+
+            $data['Announce']=$this->home_model->get_Announce();
+
+            $this->load->view('templates/header');
+            $this->load->view('Home/index' , $data);
+            $this->load->view('templates/footer');
+
+        }
 		
 		public function view($page='home'){
 			if(!file_exists(APPPATH.'views/pages/'.$page.'.php')){
@@ -63,14 +74,4 @@
             $this->load->view('posts/index');
             $this->load->view('templates/footer');
         }
-        public function contactus(){
-
-            $this->load->view('templates/header');
-            $this->load->view('pages/contact');
-            $this->load->view('templates/footer');
-        }
-
-        
-        
-
 	}

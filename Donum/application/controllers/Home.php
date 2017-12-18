@@ -34,9 +34,9 @@
 		$this->form_validation->set_rules('body','Body','required');
 
 		if($this->form_validation->run() === FALSE){
-		$this->load->view('templates/header');
+		$this->load->view('includes/admin_header');
 		$this->load->view('Home/create' , $data);
-		$this->load->view('templates/footer');
+//		$this->load->view('templates/footer');
 	}else{
 		$this->home_model->create_announce();
 		redirect('Home');
