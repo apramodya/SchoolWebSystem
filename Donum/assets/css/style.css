@@ -1,0 +1,32 @@
+.navbar-default{
+	background:linear-gradient(#1677a1,#1c89b8);	
+	position: relative;
+	box-shadow: 0 3px #d5e1e6;
+	height:65px;
+	}
+.white {
+    color:white !important;
+}
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+
+.post_date{
+	background: #f4f4f4;
+	padding: 4px;
+	margin: 3px 0;
+	display: block;
+}
+.post-thumb{
+	width: 100%;
+}
+
+
